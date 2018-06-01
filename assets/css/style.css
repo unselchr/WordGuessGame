@@ -1,0 +1,15 @@
+#header{
+    width:750px;
+}
+#sprite{
+    height:110px;
+    width:110px;
+    background:url("../images/HangmanSpriteSheet.jpg");
+    position:absolute;
+}
+.letter{
+    height:100px;
+    width:100px;
+    position:absolute;
+    float: left;
+}
