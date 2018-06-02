@@ -15,18 +15,18 @@ var game={
 document.onkeyup=function(event){
 
 
-        updatePage();
+        //updatePage();
     
     
     
         if(game.word=""){
             //newWord();
         }
-        if(checkGuessed(event.key)){
+        if(game.lettersGuessed.includes(event.key)){
             alert("You already guessed that!");
         }
         else{
-            if(checkWord(event.key)){
+            if(game.word.includes(event.key)){
                 alert(event.key+" is in the word!");
             }
             else{
@@ -81,8 +81,9 @@ document.onkeyup=function(event){
         }
     }
     function newWord(){
-        //random=Math.floor(Math.random()*words.length+1);
-        //word=words[random];
+        random=Math.floor(Math.random()*words.length+1);
+        word=words[random];
         guesses=6;
         updatePage();
     }
+    
