@@ -57,8 +57,8 @@ document.onkeyup=function(event){
         return(false);
     }
     function checkWord(input){
-        for(var i=0;i<game.word.length;i++){
-            if(game.word[i]==input){
+        for(var j=0;j<game.word.length;j++){
+            if(game.word[j]==input){
                 return(true);
             }
         }
